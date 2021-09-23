@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  /* Color */
+  --white-color: #fff;
+  --grey-dark-color: #909090;
+  --black-color: #140a00;
+  --pink-color: #f8bbd0;
+  --grey-light-color: #f5f5f5;
+
+  /* Size */
+  --padding-header: 24px 30px;
+  --padding-home: 40px;
+  --padding-right: 36px;
+  --profile-img-size: 40px;
+  --blog-size: 3.25rem;
+
+  /* Font Size */
+  --font-large: 1.5rem;
+  --font-mlarge: 1.25rem;
+  --font-medium: 1.125rem;
+  --font-small: 0.875rem;
+  --home-title: 4rem;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--grey-light-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+header {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-weight: bold;
+  padding: var(--padding-header);
+}
+
+header .logo {
+  cursor: pointer;
+  font-size: var(--font-large);
+  margin-left: var(--padding-right);
+}
+
+header .menu ul {
+  font-size: var(--font-medium);
+  display: flex;
+}
+
+header .menu ul li {
+  margin-right: var(--padding-right);
+}
+
+header .logo:hover,
+header .menu ul li:hover {
+  color: var(--pink-color);
+  transition: 300ms ease-in;
+}
+
+.home {
+  background-color: var(--pink-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-home);
+  text-align: center;
+}
+
+.home .homeQuote {
+  font-size: calc(var(--font-large) * 2);
+  font-weight: bold;
+  padding: var(--padding-header);
+}
+
+.home .homeQuote i {
+  font-size: var(--font-large);
+  color: var(--white-color);
+  vertical-align: text-top;
+}
+
+.home hr {
+  margin-top: var(--font-medium);
+  border: 2px solid var(--white-color);
+  width: calc(var(--font-large) * 2);
+}
+
+.home .homeSubtitle {
+  padding: var(--padding-home);
+  font-size: var(--font-mlarge);
+  font-weight: bold;
+}
+
+.home .blog {
+  display: flex;
+}
+
+.home .blog img {
+  border: 2px solid var(--white-color);
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.home .blog i {
+  font-size: var(--blog-size);
+  border: 2px solid var(--white-color);
+  border-radius: 50%;
+}
+
+.home .blog li {
+  margin-right: calc(var(--padding-right) / 2);
+}
+
+.home .blog li:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
