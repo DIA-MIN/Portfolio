@@ -49,6 +49,7 @@ a {
 
 header {
   position: sticky;
+  z-index: 1;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -235,4 +236,12 @@ header .menu ul li:hover {
   box-shadow: 1rem 1rem 1rem 0 var(--grey-medium-color);
   -webkit-box-shadow: 1rem 1rem 1rem 0 var(--grey-medium-color);
   margin: var(--padding-home);
+  transition: transform 300ms ease;
+}
+
+.skiils .skillsContainer .frontEnd:hover,
+.skiils .skillsContainer .backEnd:hover,
+.skiils .skillsContainer .versionControl:hover,
+.skiils .skillsContainer .certificate:hover {
+  transform: scale(1.1);
 }
